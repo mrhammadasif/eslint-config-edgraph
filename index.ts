@@ -2,17 +2,13 @@ import { ESLint } from "eslint"
 
 module.exports = {
   root: true,
-  env: {
-    node: true
-  },
+  env: { node: true },
   extends: [
     "plugin:vue/recommended",
     "@vue/typescript"
   ],
 
-  parserOptions: {
-    parser: "@typescript-eslint/parser"
-  },
+  parserOptions: { parser: "@typescript-eslint/parser" },
   rules: {
     indent: "off",
     "@typescript-eslint/indent": [
@@ -26,9 +22,7 @@ module.exports = {
     "brace-style": [
       "error",
       "stroustrup",
-      {
-        allowSingleLine: true
-      }
+      { allowSingleLine: true }
     ],
     "comma-dangle": "error",
     "computed-property-spacing": "error",
@@ -91,9 +85,7 @@ module.exports = {
       "error",
       "always"
     ],
-    "object-property-newline": [
-      "error"
-    ],
+    "object-property-newline": ["error"],
     "object-curly-newline": [
       "error",
       {
@@ -129,9 +121,7 @@ module.exports = {
     "lines-between-class-members": [
       "error",
       "always",
-      {
-        exceptAfterSingleLine: true
-      }
+      { exceptAfterSingleLine: true }
     ],
     "comma-spacing": "error",
     quotes: [
@@ -142,21 +132,22 @@ module.exports = {
     "vue/component-name-in-template-casing": [
       "error",
       "PascalCase",
-      {
-        registeredComponentsOnly: true
-      }
+      { registeredComponentsOnly: true }
     ],
     "vue/max-attributes-per-line": [
       "error",
       {
-        singleline: 1,
-        multiline: {
-          max: 1,
-          allowFirstLine: false
-        }
+        singleline: { max: 1 },
+        multiline: { max: 1 }
       }
     ],
-
+    // "vue/first-attribute-linebreak": [
+    //   "error",
+    //   {
+    //     singleline: "beside",
+    //     multiline: "below"
+    //   }
+    // ],
     "vue/html-closing-bracket-spacing": "warn",
     "vue/html-closing-bracket-newline": [
       "error",
@@ -178,9 +169,7 @@ module.exports = {
         "**/__tests__/*.{j,t}s?(x)",
         "**/tests/unit/**/*.spec.{j,t}s?(x)"
       ],
-      env: {
-        jest: true
-      }
+      env: { jest: true }
     }
   ]
 } as ESLint.ConfigData

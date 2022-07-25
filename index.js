@@ -11,16 +11,12 @@
     Object.defineProperty(exports, "__esModule", { value: true });
     module.exports = {
         root: true,
-        env: {
-            node: true
-        },
+        env: { node: true },
         extends: [
             "plugin:vue/recommended",
             "@vue/typescript"
         ],
-        parserOptions: {
-            parser: "@typescript-eslint/parser"
-        },
+        parserOptions: { parser: "@typescript-eslint/parser" },
         rules: {
             indent: "off",
             "@typescript-eslint/indent": [
@@ -34,9 +30,7 @@
             "brace-style": [
                 "error",
                 "stroustrup",
-                {
-                    allowSingleLine: true
-                }
+                { allowSingleLine: true }
             ],
             "comma-dangle": "error",
             "computed-property-spacing": "error",
@@ -99,9 +93,7 @@
                 "error",
                 "always"
             ],
-            "object-property-newline": [
-                "error"
-            ],
+            "object-property-newline": ["error"],
             "object-curly-newline": [
                 "error",
                 {
@@ -137,9 +129,7 @@
             "lines-between-class-members": [
                 "error",
                 "always",
-                {
-                    exceptAfterSingleLine: true
-                }
+                { exceptAfterSingleLine: true }
             ],
             "comma-spacing": "error",
             quotes: [
@@ -150,20 +140,22 @@
             "vue/component-name-in-template-casing": [
                 "error",
                 "PascalCase",
-                {
-                    registeredComponentsOnly: true
-                }
+                { registeredComponentsOnly: true }
             ],
             "vue/max-attributes-per-line": [
                 "error",
                 {
-                    singleline: 1,
-                    multiline: {
-                        max: 1,
-                        allowFirstLine: false
-                    }
+                    singleline: { max: 1 },
+                    multiline: { max: 1 }
                 }
             ],
+            // "vue/first-attribute-linebreak": [
+            //   "error",
+            //   {
+            //     singleline: "beside",
+            //     multiline: "below"
+            //   }
+            // ],
             "vue/html-closing-bracket-spacing": "warn",
             "vue/html-closing-bracket-newline": [
                 "error",
@@ -184,9 +176,7 @@
                     "**/__tests__/*.{j,t}s?(x)",
                     "**/tests/unit/**/*.spec.{j,t}s?(x)"
                 ],
-                env: {
-                    jest: true
-                }
+                env: { jest: true }
             }
         ]
     };

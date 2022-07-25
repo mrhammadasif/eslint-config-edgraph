@@ -9,7 +9,7 @@
     "prepack": "tsc -p ."
   },
   "peerDependencies": {
-    "eslint": ">= 6.7.2"
+    "eslint": ">= 7.5.0"
   },
   "dependencies": {
     "@types/eslint": "^8.4.3",

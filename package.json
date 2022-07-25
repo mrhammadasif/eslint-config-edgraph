@@ -1,22 +1,24 @@
 {
   "name": "eslint-config-edgraph",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "yarn version --patch",
-    "prepack": "tsc -p ."
+    "prepack": "tsc -p .",
+    "lint": "yarn prepack && eslint test/**.vue --config index.js"
   },
   "peerDependencies": {
-    "eslint": ">= 7.5.0"
+    "eslint": ">= 7.5.0",
+    "eslint-plugin-vue": ">= 9.3.0"
   },
   "dependencies": {
     "@types/eslint": "^8.4.3",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
     "@vue/eslint-config-typescript": "^7.0.0",
-    "eslint-plugin-vue": "6.2.2",
+    "eslint-plugin-vue": "^9.3.0",
     "typescript": "~4.1.5"
   },
   "keywords": [],
